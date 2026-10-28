@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghersaus-compress_jd069"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出模型压缩工程师·数据去重与污染检测的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ghersaus" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://ghersaus.github.io"
+Repository = "https://github.com/ghersaus/compress_jd069"
+Issues = "https://github.com/ghersaus/compress_jd069/issues"
+
+[project.scripts]
+compress_jd069 = "compress_jd069:main"
+
+[tool.setuptools]
+py-modules = ["compress_jd069"]
